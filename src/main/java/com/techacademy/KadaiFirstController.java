@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class KadaiFirstController {
 
-    @GetMapping("/{date}")
+    @GetMapping("/dayofweek/{date}")
     public String disDayOfWeek(@PathVariable String date) {
         int year = Integer.parseInt(date.substring(0,4));
         int month = Integer.parseInt(date.substring(4,6));
